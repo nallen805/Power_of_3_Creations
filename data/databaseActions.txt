@@ -1,0 +1,4 @@
+//Database actions
+
+//Insert into adminUsers collection
+db.adminUsers.insert({username:'admin', password:'adminPass123'});
