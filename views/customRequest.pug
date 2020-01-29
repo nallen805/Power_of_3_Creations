@@ -1,0 +1,26 @@
+//- Custom request form
+
+extends layout
+block content
+    h4 Fill Out the Custom Request Form Below
+    .container 
+        form(action='/saveCustomRequest' method='post').form-group
+            .row
+                label Name:
+                br
+                input(type='text' name='name' required).form-control
+            .row
+                label Email:
+                br 
+                input(type='email' name='email' required).form-control
+            .row
+                label Phone #:
+                br
+                input(type='phone' name='phone' required).form-control
+            .row
+                label Describe your custom request (someone will follow up to confirm your request):
+                br 
+                textarea(name='customMsg', cols='20', rows='10').form-control
+            .row
+                input(type='submit' value='Submit').btn.btns.form-control
+        

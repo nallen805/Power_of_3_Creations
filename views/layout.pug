@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    block head
+      link(rel='stylesheet', href='../stylesheets/css/bootstrap.css')
+      link(rel='stylesheet', href='../stylesheets/style.css')
+      script(src='../javascripts/jquery-3.3.1.js')
+      script(src='../javascripts/bootstrap.js')
+  block header
+    include ./includes/header.pug
+  body.container-fluid  
+    block content
+  block footer 
+    include ./includes/footer.pug

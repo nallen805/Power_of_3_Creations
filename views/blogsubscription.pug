@@ -1,0 +1,18 @@
+//- Blog subscription
+
+extends layout
+block content
+    h4 Sign up here to be added to my blog email subscription!
+    .container
+        form(action='/savedBlogSubscription' method='post').form-group
+            .row
+                label Name:
+                br
+                input(type='text' name='name' required).form-control
+            .row
+                label Email:
+                br 
+                input(type='email' name='email' required).form-control
+            .row
+                input(type='submit' value='Subscribe').btn.btns.form-control
+            

@@ -1,0 +1,12 @@
+//- Show all blog subscribers 
+
+extends layout
+block content
+    h4 Blog Subscribers
+    .container
+        each bsub in sub
+            |#{bsub.name}
+            br
+            |#{bsub.email}
+            hr
+    a(href='/adminSuccess') Back 

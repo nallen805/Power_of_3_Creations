@@ -1,0 +1,32 @@
+extends layout
+block content
+    .row
+        .col-lg
+            #aboutmecontent
+                img#profileImg.img-fluid.rounded(src='../images/yveAvatar.png')
+                h6 
+                |Thank you for stopping by!! Simply put, I love to crochet!! I can crochet
+                |everything from baby blankets to adult swimsuits! All of my designs are  custom-made,
+                |which means they are made to order -- please keep this in mind when placing your order. 
+                |My time and effort goes into creating these wonderful designs for you, and I do begin working
+                |on them immediately. With that in mind, once an order is placed, it requires a deposit 
+                |(which will go towards the item's purchase) and it cannot be cancelled once placed. I invite
+                |you to take a look at my already made designs and once you decide what you want, simply fill out
+                |a custom order form, and we're in business! Someone will follow up with you immediately after your 
+                |order to confirm details. I hope you like what you see!! Thank you again!!
+                p#signature 
+                    |-Yve 
+        .col-lg
+            #carouselSection
+                #homeCarousel.carousel.slide.carousel-fade(data-ride='carousel')
+                    .carousel-inner 
+                        .carousel-item.active
+                            img.carouselImg.img-fluid.d-block.w-100.rounded(src='../images/crocheting.jpg')
+                        .carousel-item
+                            img.carouselImg.img-fluid.d-block.w-100.rounded(src='../images/yarnGift.jpg')
+                        .carousel-item
+                            img.carouselImg.img-fluid.d-block.w-100.rounded(src='../images/bwYarn.jpg')
+                        .carousel-item
+                            img.carouselImg.img-fluid.d-block.w-100.rounded(src='../images/gpYarn.jpg')
+    #adminLogin
+        a(href='/adminLogin')|Admin

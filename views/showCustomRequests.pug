@@ -1,0 +1,16 @@
+//- Show admin all custom requests
+
+extends layout
+block content
+    h2 Custom Requests
+    .container 
+        each req in custReq
+            |#{req.name}
+            br
+            |#{req.email}
+            br
+            |#{req.phone}
+            br
+            |#{req.customMsg}
+            hr
+    a(href='/adminSuccess') Back 

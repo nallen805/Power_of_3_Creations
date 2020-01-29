@@ -1,0 +1,13 @@
+//- Contact Messages Displayed
+extends layout 
+block content
+    h4 Contact Messages
+    .container
+        each msg in contMsg
+            |#{msg.name}
+            br
+            |#{msg.email}
+            br 
+            |#{msg.message}
+            hr
+    a(href='/adminSuccess') Back 

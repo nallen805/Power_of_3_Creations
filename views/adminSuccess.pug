@@ -1,0 +1,14 @@
+//-Admin Successful login
+//-Admin users can create a new blog and/or posts, see all blogs and/or posts, and respond to comments on posts
+
+extends layout
+block content
+    h1 Admin Page Welcome
+    .list-group
+        a(href='/viewAll').list-group-item.list-group-item-action View All Posts
+        a(href='/Create').list-group-item.list-group-item-action Create New Post
+        a(href='/showCustom').list-group-item.list-group-item-action Show Custom Requests
+        a(href='/showContactMsgs').list-group-item.list-group-item-action View Contact Messages
+        a(href='/showBlogSubscribers').list-group-item.list-group-item-action View Blog Subscribers
+    #logOut
+        a(href='/adminLogin') Logout  

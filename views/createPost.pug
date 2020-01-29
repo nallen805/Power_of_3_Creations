@@ -1,0 +1,26 @@
+//- Admin create new post
+
+extends layout
+block append header
+    link(rel='stylesheet' href='../javascripts/jquery-ui/jquery-ui.css')
+    script(src='../javascripts/jquery-ui/jquery-ui.js')
+    script(src='../javascripts/javascripts.js')
+block content
+    h4 Create New Post
+    .container 
+        form(action='/savedPost' method='post').form-group
+            .row
+                label Date: 
+                br
+                input(type='text' id='datepicker' name='date' onclick='chooseDate()' required).form-control
+            .row 
+                label Title: 
+                br 
+                input(type='text' name='blogname' required).form-control
+            .row
+                label Post:
+                br
+                textarea(col='5' rows='10' name='blogdescription' required).form-control
+            .row
+                input(type='submit' value='Submit').btn.btns.form-control
+    a(href='/adminSuccess') Back  

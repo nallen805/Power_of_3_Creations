@@ -1,0 +1,40 @@
+//- Contact Us page 
+//- User can send in questions about a product or general question and view our contact information
+extends layout
+block content
+    #socmedicons
+        |Follow me on social media!
+        a(href='#')
+            img(src='../images/instagram.png' alt='Instagram').jqImgs
+        a(href='#')
+            img(src='../images/facebook.png' alt='FaceBook').jqImgs
+        a(href='#')
+            img(src='../images/etsy.png' alt='Etsy').jqImgs
+    h4 Contact Us
+    .container
+        form(action='/contactSuccess' method='post').form-group
+            .row
+                label Name: 
+                br 
+                input(type='text' name='name' required).form-control
+            .row
+                label Email:
+                br
+                input(type='email' name='email' required).form-control
+            .row
+                label Message:
+                br 
+                textarea(col='4' row=10 name='msg' required).form-control
+                br 
+            .row
+                input(type='submit' value='Submit').btn.btns.form-control
+    .container
+        .row
+            #address
+                |Power of 3 Creations
+                br  
+                |1219 Creations Way 
+                br
+                |Atlanta, GA
+                br
+                |(999)-416-9117 

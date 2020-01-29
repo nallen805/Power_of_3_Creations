@@ -1,0 +1,11 @@
+extends layout
+block content
+    h6 
+        a(href='/blogsubscription')|Click here to subscribe to my blog! 
+    #displayAllPosts
+        each post in blogPost
+            #date               #{post.date}
+            #blogname           #{post.blogname}
+            #blogdescription    #{post.blogdescription}
+            hr 
+        

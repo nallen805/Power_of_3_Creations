@@ -1,0 +1,25 @@
+extends layout
+block content
+    h4|Admin Users Login Here
+    .container
+        #displayMsg #{message}
+        form.form-group(action="/adminSuccess", method='post')
+            label Username:
+            br 
+            input.form-control(
+                type='text' 
+                placeholder='Username'
+                name='username'
+                required
+                )
+            br
+            label Password
+            br 
+            input.form-control(
+                type='password'
+                placeholder='Password' 
+                name='password'
+                required
+                )
+            br 
+            button.btn.btns.form-control(type='submit') Submit 

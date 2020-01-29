@@ -1,0 +1,13 @@
+//-View all posts
+
+extends layout
+block content
+    h4 View All Posts
+    .container
+        each post in posts
+            #date #{post.date}
+            #blogname #{post.blogname} 
+            #blogdesc #{post.blogdescription}
+            hr
+    .row
+        a(href='/adminSuccess') Back 
